@@ -1,6 +1,10 @@
 const fs = require('fs');
 
 fs.readFile('./local.conf', (err, data) => {
+    parseConfig(data);
+})
+
+function parseConfig(data) {
     let lines = data.toString().split('\r');
     let parsed = {};
     for(let l of lines) {
@@ -15,4 +19,4 @@ fs.readFile('./local.conf', (err, data) => {
         }
     }
     console.log(parsed)
-})
+}
