@@ -31,6 +31,29 @@ function generateConfig(data) {
     return config
 }
 
+function getllh(data) {
+    if (data == '') return {}
+
+    let splitted = data.split('  ').join(' ').split('  ').join(' ').split('\n').join('').split(' ');
+    return {
+        date: splitted[0],
+        hour: splitted[1],
+        lat: splitted[2],
+        lon: splitted[3],
+        h: splitted[4],
+        type: splitted[5],
+        vsat: splitted[6],
+        sdn: splitted[7],
+        sde: splitted[8],
+        sdu: splitted[9],
+        sdne: splitted[10],
+        sdeu: splitted[11],
+        sdun: splitted[12],
+        age: splitted[13],
+        ratio: splitted[14]
+    };
+}
+
 function getDate() {
     let d = new Date();
     let year = d.getFullYear()
@@ -45,5 +68,6 @@ function getDate() {
 
 module.exports = {
     parseConfig,
-    generateConfig
+    generateConfig,
+    getllh
 }

@@ -26,6 +26,13 @@ const rtklib = require('rtklib');
 let config = rtklib.JSON2config(json);
 ```
 
+- llh2JSON 
+
+```js
+const rtklib = require('rtklib');
+let llh = rtklib.llh2JSON(myLlhLine);
+```
+
 ## Telnet
 - constructor
 ```js

@@ -1,6 +1,6 @@
 {
   "name": "rtklib",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "utility to work with RTKLIB using node.js",
   "main": "index.js",
   "scripts": {
