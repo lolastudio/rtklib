@@ -26,8 +26,10 @@ class Telnet {
                 this.connection.exec(this.params.password).then((res) => {
                     resolve(this.connection);
                 }).catch(err => {
-                    console.error(err)
+                    reject(err)
                 });
+            }).catch(err => {
+                reject(err)
             });
         });
     }
@@ -40,6 +42,8 @@ class Telnet {
         return new Promise((resolve, reject) => {
             this.connection.exec(cmd).then(res => {
                 cmd == 'status' ? resolve(this.parse(res)) : resolve(res);
+            }).catch(err => {
+                reject(err)
             });
         });
     }
