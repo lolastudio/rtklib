@@ -1,0 +1,28 @@
+{
+  "name": "rtklib",
+  "version": "1.0.0",
+  "description": "utility to work with RTKLIB using node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolastudio/rtklib.git"
+  },
+  "keywords": [
+    "rtklib",
+    "rtk",
+    "util",
+    "utility"
+  ],
+  "author": "lola studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lolastudio/rtklib/issues"
+  },
+  "homepage": "https://github.com/lolastudio/rtklib#readme",
+  "dependencies": {
+    "telnet-client": "^1.4.6"
+  }
+}
