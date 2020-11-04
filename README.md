@@ -1,5 +1,10 @@
-# rtklib-util
+# rtklib
 > utility to work with rtklib using node.js
+
+## Install
+```sh
+npm i rtklib
+```
 
 ## Parser
 - parseConfig
