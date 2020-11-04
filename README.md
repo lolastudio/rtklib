@@ -1,2 +1,2 @@
 # rtklib-util
->utility to work with rtklib using node.js
+> utility to work with rtklib using node.js
