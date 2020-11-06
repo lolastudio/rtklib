@@ -1,11 +1,10 @@
 function parseConfig(data) {
     data = typeof data == 'string' ? data : data.toString()
 
-    let lines = data.split('\r')
+    let lines = data.split('\r').join('').split('\n')
     let parsed = {}
     for (let l = 0; l < lines.length; l++) {
-        let line = lines[l];
-        line = line.split('\n').join('')
+        let line = lines[l]
         line = line.split('	').join('')
         line = line.split(' ').join('')
         line = line.split('#')
