@@ -36,5 +36,12 @@ function telnet_test() {
     });
 }
 
+function llh_test() {
+    let llh = '2020/11/14 18:17:49.000  -27.552285908  -48.656709107   598.2595   1   8   1.4625   1.9040   4.1178   0.3356  -1.0922  -0.3435   1.00    1.0';
+    let json = rtklib.llh2JSON(llh);
+    if(Object.keys(json).length != 15) throw new Error('llh');
+}
+
+llh_test();
 parser_test();
 telnet_test();
