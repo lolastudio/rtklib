@@ -33,7 +33,7 @@ function generateConfig(data) {
 function getllh(data) {
     if (data == '') return {}
 
-    let splitted = data.split('  ').join(' ').split('  ').join(' ').split('\n').join('').split(' ');
+    let splitted = data.split('  ').join(' ').split('  ').join(' ').split('  ').join(' ').split('\n').join('').split(' ');
     return {
         date: splitted[0],
         hour: splitted[1],
